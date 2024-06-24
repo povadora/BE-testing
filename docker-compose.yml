@@ -1,0 +1,9 @@
+services:
+  mariadb:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 'password'
+      MYSQL_DB: 'database_testing'
+    ports:
+      - 3306:3306
